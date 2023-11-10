@@ -1,0 +1,318 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* шрифты */
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url(fonts/AnonymousPro-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+/* теги */
+body {
+	font-family: Anonymous Pro;
+	font-style: normal;
+	color: #121723;
+}
+
+ul {
+	list-style: none;
+	display: inline-flex;
+	gap: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #121723;
+}
+/* блок */
+.container {
+	width: 100%;
+	max-width: 1185px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.links {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.links > li a:hover {
+	color: grey;
+}
+
+/* шапка  */
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	background: white;
+	border-bottom: 1px solid #a1a6b4;
+}
+/* ДОДЕЛАЙ ХЕДЕР */
+
+.header__container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	width: 212px;
+	height: 63px;
+}
+
+/* основной котнент */
+.main {
+	background: #f1f1f1;
+	padding-bottom: 24px;
+}
+
+.main__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.main__title {
+	font-size: 48px;
+	font-weight: 700;
+	padding: 32px 0;
+}
+
+.cards {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 27px;
+}
+
+.card {
+	background-color: #ffffff;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+	color: grey;
+}
+
+.card__img {
+	max-width: 364px;
+	width: 100%;
+	height: 254px;
+	border-radius: 12px 12px 0px 0px;
+}
+
+.card__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 371px;
+	padding: 32px 24px;
+	gap: 10px;
+}
+
+.text__title {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.text__description {
+	font-size: 20px;
+}
+/* подвал */
+.footer {
+	background: #121723;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer__container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(230, 232, 236, 0.4);
+	padding: 20px 0;
+}
+
+.footer__logo {
+	width: 300px;
+	height: 22px;
+}
+
+.footer__links > li a {
+	color: white;
+}
+
+.copyright {
+	color: #a1a6b4;
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+}
+
+/* карточка кроссовка */
+.sneaker {
+	padding: 32px 0;
+}
+
+.sneaker__container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 48px;
+	background: #ffffff;
+	border-radius: 50px;
+}
+
+.sneaker__img {
+	border-radius: 50px 50px 0px 0px;
+	height: 600px;
+}
+
+.sneaker__info {
+	display: flex;
+	flex-flow: column wrap;
+	gap: 24px;
+}
+
+.info__title {
+	font-size: 48px;
+	line-height: 100%;
+	font-weight: 400;
+}
+
+.info__subtitle {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.info__add-info {
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.add-info__about-company {
+	display: flex;
+	line-height: 28px;
+	flex: 1 0 0;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.add-info__parameters {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 0;
+}
+
+.parameters__header {
+	display: flex;
+	font-weight: 400;
+	line-height: normal;
+	border-bottom: 1px solid #121723;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.content__parameter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #121723;
+	padding: 24px 0;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 376px) {
+	.container {
+		padding: 0 16px;
+	}
+	.header {
+		padding: 24px 0;
+	}
+	.header__container {
+		justify-content: center;
+		gap: 24px;
+	}
+	.main {
+		padding: 32px 0;
+	}
+	.main__title {
+		font-size: 32px;
+		padding: 0 0 32px;
+	}
+	.cards {
+		gap: 24px;
+	}
+	.card__text {
+		width: 100%;
+		padding: 32px 24px;
+		gap: 12px;
+	}
+	.footer {
+		width: 100%;
+		margin: 0 auto;
+		padding: 32px 0px 24px;
+	}
+	.footer__container {
+		justify-content: center;
+		padding: 0 0 24px;
+		gap: 32px;
+	}
+	.copyright {
+		padding: 24px 0 0;
+	}
+	.sneaker {
+		padding: 32px 16px;
+	}
+	.sneaker__container {
+		padding: 24px;
+		border-radius: 12px;
+	}
+	.sneaker__img {
+		border-radius: 12px 12px 0px 0px;
+		height: 172px;
+	}
+	.info__title {
+		font-size: 32px;
+	}
+	.info__subtitle {
+		font-size: 20px;
+	}
+	.info__add-info {
+		flex-direction: column;
+	}
+	.add-info__about-company {
+		line-height: 24px;
+		font-size: 16px;
+	}
+	.parameters__header {
+		font-size: 24px;
+	}
+	.content__parameter {
+		width: 295px;
+		font-size: 16px;
+	}
+}
