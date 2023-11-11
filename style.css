@@ -63,7 +63,6 @@ a {
 	background: white;
 	border-bottom: 1px solid #a1a6b4;
 }
-/* ДОДЕЛАЙ ХЕДЕР */
 
 .header__container {
 	display: flex;
@@ -245,8 +244,9 @@ a {
 	padding: 24px 0;
 	font-size: 20px;
 }
+/* медиазапросы */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 376px) {
 	.container {
 		padding: 0 16px;
 	}
